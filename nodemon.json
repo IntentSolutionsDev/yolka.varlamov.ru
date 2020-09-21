@@ -1,0 +1,10 @@
+{
+  "verbose": false,
+  "watch": ["./bin/**/*", "./lib/**/*"],
+  "exec": "node -r ts-node/register -r dotenv/config bin/devBot.ts",
+  "ext": "js,json, ts",
+  "env": {
+    "DOTENV_CONFIG_PATH": "../.env",
+    "TS_NODE_TRANSPILE_ONLY": true
+  }
+}

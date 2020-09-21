@@ -1,0 +1,16 @@
+{
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "lib": ["es2019"],
+    "target": "es2018",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "strict": true,
+    "moduleResolution": "node",
+    "paths": {
+      "lib/*": ["./lib/*"]
+    }
+  }
+}

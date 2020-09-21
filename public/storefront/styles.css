@@ -1,0 +1,72 @@
+/* CstmzShippingAddressMods */
+@media screen and (max-width:768px){
+    html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__row--cstmz_kvartira,html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__row--cstmz_padik,html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__row--cstmz_etazh,html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__row--cstmz_domofon{
+        order:8;
+        flex-basis:49%;
+        padding-right:10px;
+    }
+    html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__row--cstmz_delivery_interval,html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__row--cstmz_delivery_date{
+        order:9;
+    }
+}
+@media screen and (min-width:768px){
+    html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__row--cstmz_kvartira,html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__row--cstmz_padik,html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__row--cstmz_etazh,html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__row--cstmz_domofon{
+        order:8;
+        flex-basis:25%;
+        padding-right:10px;
+    }
+    html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__row--cstmz_delivery_date{
+        order:9;
+        flex-basis:49%;
+    }
+    html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__row--cstmz_delivery_interval{
+        order:9;
+        flex-basis:50.5%;
+    }
+    html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__row--cstmz_delivery_interval{
+        padding-right:10px;
+    }
+    html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form__cell--cstmz_delivery_date{
+        width:100%;
+    }
+}
+
+/* CstmzCities */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step--address .ec-form{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step--address .ec-form>*{
+    width:100%;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step--address .ec-form .ec-form__cell--city,html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step--address .ec-form .ec-form__cell--postalcode,html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step--address .ec-form .form-control--type-address-line2,html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step--address .ec-form__cell--company-name{
+    display:none;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step--address .ec-form .ec-form__row:nth-child(4){
+    order:1;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step--address .ec-form .ec-form__row:nth-child(3){
+    order:2;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step--address .ec-form__cell--cstmz_delivery_interval select option:nth-child(1){
+    display:none;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step--address .csmtz-disabled{
+    pointer-events:none;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step--address .csmtz-disabled:after{
+    content:"Пожалуйста, выберите город.";
+    width:100%;
+    text-align:right;
+    font-size:12px;
+    color:#E56464;
+}
+html#ecwid_html body#ecwid_body .flatpickr-calendar{
+    font-family:'IBM Plex Sans';
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step--address .cstmz-message_error{
+    color:#E56464;
+    margin-bottom:40px;
+}

@@ -1,0 +1,44 @@
+{
+  "name": "yolki",
+  "scope": "gooditworks",
+  "version": 2,
+  "routes": [
+    { "src": "/api/webhook/ecwid", "dest": "/api/webhook/ecwid.ts" },
+    {
+      "src": "/api/webhook/telegram/(?<token>[^/]+)",
+      "dest": "/api/webhook/telegram.ts"
+    },
+    {
+      "src": "/api/push_telegram_sales",
+      "dest": "/api/pushTelegramSales.ts"
+    },
+    {
+      "src": "/api/refresh_amocrm_token",
+      "dest": "/api/refreshAmocrmToken.ts"
+    },
+    { "src": "/api/amocrm_token", "dest": "/api/amocrmToken.ts" },
+    { "src": "/api/ecwid/zones", "dest": "/api/ecwid/zones.ts" },
+    { "src": "/api/ecwid/transit_time", "dest": "/api/ecwid/transitTime.ts" }
+  ],
+  "env": {
+    "AMOCRM_SUBDOMAIN": "@amocrm-subdomain",
+    "AMOCRM_INTEGRATION_ID": "@amocrm-integration-id",
+    "AMOCRM_INTEGRATION_SECRET": "@amocrm-integration-secret",
+    "AMOCRM_INTEGRATION_REDIRECT_URI": "@amocrm-integration-redirect-uri",
+    "AMOCRM_ACCESS_TOKEN": "@amocrm-access-token",
+    "AMOCRM_REFRESH_TOKEN": "@amocrm-refresh-token",
+    "AMOCRM_GOODS_CATALOG_ID": "@amocrm-goods-catalog-id",
+    "ECWID_STORE_ID": "@ecwid-store-id",
+    "ECWID_PUBLIC_TOKEN": "@ecwid-public-token",
+    "ECWID_SECRET_TOKEN": "@ecwid-secret-token",
+    "ECWID_CLIENT_SECRET": "@ecwid-client-secret",
+    "ECWID_ALLOW_CORS_URL": "@ecwid-allow-cors-url",
+    "ZEIT_TOKEN": "@zeit-token",
+    "ZEIT_TEAM_ID": "@zeit-team-id",
+    "TELEGRAM_TOKEN": "@telegram-token",
+    "TELEGRAM_CHAT_ID": "@telegram-chat-id",
+    "JSONBIN_SECRET": "@jsonbin-secret",
+    "JSONBIN_BIN_ID": "@jsonbin-bin-id",
+    "SENTRY_DSN": "@yolki-sentry-dsn"
+  }
+}
