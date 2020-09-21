@@ -3,13 +3,13 @@ import { config } from "dotenv";
 config();
 
 interface IEnv {
-  amocrmSubdomain: string;
-  amocrmIntegrationId: string;
-  amocrmIntegrationSecret: string;
-  amocrmIntegrationRedirectUri: string;
-  amocrmAccessToken: string;
-  amocrmRefreshToken: string;
-  amocrmGoodsCatalogId: string;
+  // amocrmSubdomain: string;
+  // amocrmIntegrationId: string;
+  // amocrmIntegrationSecret: string;
+  // amocrmIntegrationRedirectUri: string;
+  // amocrmAccessToken: string;
+  // amocrmRefreshToken: string;
+  // amocrmGoodsCatalogId: string;
   ecwidStoreId: string;
   ecwidPublicToken: string;
   ecwidSecretToken: string;
@@ -29,13 +29,13 @@ interface IEnv {
 const envVar = (name: string): string => process.env[name] || "";
 
 const env: IEnv = {
-  amocrmSubdomain: envVar("AMOCRM_SUBDOMAIN"),
-  amocrmIntegrationId: envVar("AMOCRM_INTEGRATION_ID"),
-  amocrmIntegrationSecret: envVar("AMOCRM_INTEGRATION_SECRET"),
-  amocrmIntegrationRedirectUri: envVar("AMOCRM_INTEGRATION_REDIRECT_URI"),
-  amocrmAccessToken: envVar("AMOCRM_ACCESS_TOKEN"),
-  amocrmRefreshToken: envVar("AMOCRM_REFRESH_TOKEN"),
-  amocrmGoodsCatalogId: envVar("AMOCRM_GOODS_CATALOG_ID"),
+  // amocrmSubdomain: envVar("AMOCRM_SUBDOMAIN"),
+  // amocrmIntegrationId: envVar("AMOCRM_INTEGRATION_ID"),
+  // amocrmIntegrationSecret: envVar("AMOCRM_INTEGRATION_SECRET"),
+  // amocrmIntegrationRedirectUri: envVar("AMOCRM_INTEGRATION_REDIRECT_URI"),
+  // amocrmAccessToken: envVar("AMOCRM_ACCESS_TOKEN"),
+  // amocrmRefreshToken: envVar("AMOCRM_REFRESH_TOKEN"),
+  // amocrmGoodsCatalogId: envVar("AMOCRM_GOODS_CATALOG_ID"),
   ecwidStoreId: envVar("ECWID_STORE_ID"),
   ecwidPublicToken: envVar("ECWID_PUBLIC_TOKEN"),
   ecwidSecretToken: envVar("ECWID_SECRET_TOKEN"),

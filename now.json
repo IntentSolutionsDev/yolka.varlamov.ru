@@ -21,13 +21,7 @@
     { "src": "/api/ecwid/transit_time", "dest": "/api/ecwid/transitTime.ts" }
   ],
   "env": {
-    "AMOCRM_SUBDOMAIN": "@amocrm-subdomain",
-    "AMOCRM_INTEGRATION_ID": "@amocrm-integration-id",
-    "AMOCRM_INTEGRATION_SECRET": "@amocrm-integration-secret",
-    "AMOCRM_INTEGRATION_REDIRECT_URI": "@amocrm-integration-redirect-uri",
-    "AMOCRM_ACCESS_TOKEN": "@amocrm-access-token",
-    "AMOCRM_REFRESH_TOKEN": "@amocrm-refresh-token",
-    "AMOCRM_GOODS_CATALOG_ID": "@amocrm-goods-catalog-id",
+
     "ECWID_STORE_ID": "@ecwid-store-id",
     "ECWID_PUBLIC_TOKEN": "@ecwid-public-token",
     "ECWID_SECRET_TOKEN": "@ecwid-secret-token",
