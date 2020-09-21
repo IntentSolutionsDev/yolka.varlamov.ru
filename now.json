@@ -20,6 +20,7 @@
     { "src": "/api/ecwid/zones", "dest": "/api/ecwid/zones.ts" },
     { "src": "/api/ecwid/transit_time", "dest": "/api/ecwid/transitTime.ts" }
   ],
+  
   "env": {
     "ECWID_STORE_ID": "@ecwid-store-id",
     "ECWID_PUBLIC_TOKEN": "@ecwid-public-token",
